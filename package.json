@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "@auth/mongodb-adapter": "^2.0.4",
+    "axios": "^1.6.2",
     "mongodb": "^6.2.0",
+    "mongoose": "^8.0.1",
+    "multiparty": "^4.2.3",
     "next": "14.0.2",
     "next-auth": "^4.24.5",
     "react": "^18",
