@@ -12,16 +12,16 @@ export default async function handle(req, res){
         res.json(await Product.find())
     }
 
-    const {title, description, price, images} = req.body
+    const {title, description, price, images, category, properties} = req.body
     if(method === 'POST'){
     const productDoc =  await Product.create({
-            title, description, price, images
+            title, description, price, images,category,properties
         })
         res.json(productDoc)
     }
     if(method === 'PUT'){
-        const {title , description, price ,images, _id} = req.body
-        await Product.updateOne({_id} , {title,description,price,images})
+        const {title , description, price ,images,category,properties, _id} = req.body
+        await Product.updateOne({_id} , {title,description,price,images,category,properties})
         res.json(true)
     }
     if(method === 'DELETE'){
