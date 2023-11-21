@@ -156,7 +156,7 @@ function removeProperty(indexToRemove){
                                 <button 
                                 type="button"
                                 onClick={() => removeProperty(index)}
-                                className="btn-default">Remove</button>
+                                className="btn-red">Remove</button>
                         </div>
                     ))}
                 </div>
@@ -199,8 +199,8 @@ function removeProperty(indexToRemove){
                                  <td>{category?.parent?.name}</td>
                                  <td>
                                     
-                                     <button onClick={() => editCategory(category)} className="btn-primary mr-1">Edit</button>
-                                     <button onClick={() => deleteCategory(category)} className="btn-primary">Delete</button>
+                                     <button onClick={() => editCategory(category)} className="btn-default mr-1">Edit</button>
+                                     <button onClick={() => deleteCategory(category)} className="btn-red">Delete</button>
                                    
                                    
                                  </td>
